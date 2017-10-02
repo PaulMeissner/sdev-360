@@ -19,20 +19,20 @@ import javax.swing.*;
 
 public class GUI extends JFrame{
     // Formats doubles into currency
-    private static NumberFormat cf = NumberFormat.getCurrencyInstance();
+    public static NumberFormat cf = NumberFormat.getCurrencyInstance();
     // Buttons to perform account actions
-    private JButton withdraw = new JButton("Withdraw");
-    private JButton deposit = new JButton("Deposit");
-    private JButton transferTo = new JButton("Transfer to");
-    private JButton balance = new JButton("Balance");
+    public JButton withdraw = new JButton("Withdraw");
+    public JButton deposit = new JButton("Deposit");
+    public JButton transferTo = new JButton("Transfer to");
+    public JButton balance = new JButton("Balance");
     // Radio buttons that allow the user to switch between accounts
-    private ButtonGroup group;
-    private JRadioButton checking, savings; 
+    public ButtonGroup group;
+    public JRadioButton checking, savings; 
     // A text field that the user will use to enter amounts
-    private JTextField input = new JTextField(20);
+    public JTextField input = new JTextField(20);
     // Account objects that will hold account balances
-    private static Account savingsAccount = new Account();
-    private static Account checkingAccount = new Account();
+    public static Account savingsAccount = new Account();
+    public static Account checkingAccount = new Account();
     // GUI constructor
     public GUI() {
         
