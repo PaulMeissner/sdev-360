@@ -14,7 +14,7 @@ import javax.swing.JOptionPane;
 
 public class InsufficientFunds extends Exception {
     
-    private double amount;
+    public double amount;
     // constructor that displays a JOptionPane if there are insufficient funds
     public InsufficientFunds(double amount) { 
        this.amount = amount; 
