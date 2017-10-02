@@ -14,14 +14,14 @@ import javax.swing.JOptionPane;
 
 public class Account extends GUI {
     // Fields that hold the initial value of accounts
-    private double checkingAccountBalance = 500;
-    private double savingsAccountBalance = 500;
+    public  double checkingAccountBalance = 500;
+    public double savingsAccountBalance = 500;
     // Class variable for the service fee
-    private static final double SERVICECHARGE = 1.5;
+    public static final double SERVICECHARGE = 1.5;
     // Class variable used with counter to determine when a service fee is charged
-    private static final int COUNT= 3;
+    public static final int COUNT= 3;
     // Class variable that keeps track of number of withdrawls 
-    private static int counter = 0;
+    public static int counter = 0;
     
   
     // method for withdrawing from checking account that checks for sufficient funds
